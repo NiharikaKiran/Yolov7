@@ -1,0 +1,18 @@
+for image:
+
+python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source inference/images/Final/froks.jpg
+
+
+for video:
+
+python detect.py --weights yolov7-tiny.pt --conf 0.25 --img-size 640 --source inference/videos/cycle2.mp4
+
+
+yolov7
+format:
+images:bmp,jpg,jpeg,png,tif,tiff,dng,webp,mpo
+videos:mov,avi,mp4,mpg,mpeg,m4v,wmv,mkv
+
+models:yolov7
+	yolov7-tiny
+	yolov7-w6-pose
